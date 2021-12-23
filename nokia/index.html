@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Images/Favicon2.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./Images/Favicon2.ico" type="image/x-icon" />
+    <title>
+      NOKIA: 150 năm của kẻ thống trị sụp đổ ra sao? | 2021 - Báo chí dữ liệu
+    </title>
+
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <img
+      src="https://www.telesintese.com.br/wp-content/uploads/2016/01/nokia-logo.jpg"
+      alt=""
+      style="display: none"
+    />
+    <main class="desktop_layout">
+      <div class="left">
+        <section class="sec1">
+          <div class="layout_sec1">
+            <video src="./Video/Nokia.intro2.mp4" muted="muted" loop></video>
+            <div class="contents_layout">
+              <h1>NOKIA</h1>
+              <h2>150 năm của kẻ thống trị sụp đổ ra sao?</h2>
+              <p class="float">
+                Người dùng quan niệm rằng trong khi các hãng điện thoại khác
+                liên tục cho ra những công nghệ, những tính năng mới trên sản
+                phẩm của họ thì Nokia vẫn chọn <span>"đi ngược thời đại"</span>.
+                Quyết định này đã đưa hãng di động lâu đời rời xa sự lựa chọn
+                của người dùng. <br />
+                <br />
+                Vậy, Chạy đua công nghệ có phải nguyên nhân duy nhất?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="sec2"></section>
+        <section></section>
+        <section></section>
+      </div>
+      <div class="right" id="scroll">
+        <section class="sec1">
+          <div class="layout_sec1">
+            <video src="./Video/Nokia.intro2.mp4" muted="muted" loop></video>
+            <div class="contents_layout">
+              <h1>NOKIA</h1>
+              <h2>150 năm của kẻ thống trị sụp đổ ra sao?</h2>
+              <p class="float">
+                Người dùng quan niệm rằng trong khi các hãng điện thoại khác
+                liên tục cho ra những công nghệ, những tính năng mới trên sản
+                phẩm của họ thì Nokia vẫn chọn <span>"đi ngược thời đại"</span>.
+                Quyết định này đã đưa hãng di động lâu đời rời xa sự lựa chọn
+                của người dùng. <br />
+                <br />
+                Vậy, Chạy đua công nghệ có phải nguyên nhân duy nhất?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="sec2"></section>
+        <section></section>
+        <section></section>
+      </div>
+    </main>
+
+    <div class="mobile_Warn" style="display: none">
+      <div class="pc_logo"></div>
+      <h1>Oops</h1>
+      <p>Xin lỗi, chúng tôi chưa hỗ trợ trên thiết bị di động</p>
+    </div>
+    <script>
+      const Mobile = document.createElement("script");
+      Mobile.src = "./mobile.js";
+      Mobile.async = true;
+
+      const Desktop = document.createElement("script");
+      Desktop.src = "./scroll.js";
+      Desktop.async = true;
+
+      var isMobile = /iPhone|iPad|iPod|Windows Phone|Android/i.test(
+        navigator.userAgent
+      );
+      if (isMobile) {
+        /* your code here */
+
+        document.body.appendChild(Mobile);
+      } else {
+        document.body.appendChild(Desktop);
+      }
+    </script>
+  </body>
+</html>

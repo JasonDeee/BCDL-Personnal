@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Nokia";
+  src: url("../Fonts/UTM Nokia.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: none;
+  transition: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9e7e756;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #124095;
+}
+
+::-moz-selection {
+  background: #e9e7e7;
+  color: #124095;
+}
+
+::selection {
+  background: #e9e7e7;
+  color: #124095;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p {
+  font-size: 1.24vw;
+}
+
+.mobile_Warn {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 15vw;
+  color: #124095;
+}
+
+.mobile_Warn .pc_logo {
+  background-image: url(../Vector/PC.svg);
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+}
+
+.desktop_layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec1 {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.sec1 .layout_sec1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec1 .layout_sec1 video {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  display: block;
+}
+
+.sec1 .layout_sec1 .contents_layout {
+  width: 100%;
+  height: 100%;
+  background: #00000056;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #e9e7e7;
+  pointer-events: none;
+}
+
+.sec1 .layout_sec1 .contents_layout h1 {
+  font-family: "nokia";
+  font-weight: normal;
+  font-size: 5.96vw;
+  -webkit-transition: all 0.85s cubic-bezier(0.25, 0, 0, 2);
+  transition: all 0.85s cubic-bezier(0.25, 0, 0, 2);
+}
+
+.sec1 .layout_sec1 .contents_layout h2 {
+  font-size: 1.93vw;
+  font-weight: 200;
+  margin-bottom: 10vh;
+}
+
+.sec1 .layout_sec1 .contents_layout .float {
+  max-width: 50vw;
+  position: absolute;
+  bottom: 120px;
+  text-align: center;
+}
+
+.sec1 .layout_sec1 .contents_layout .float span {
+  color: #3895ff;
+}
+
+#sec2 {
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 38vw;
+}
+
+.left .sec1 .layout_sec1 {
+  left: 0;
+}
+
+.left #sec2 {
+  background: #124095;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 62vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right .sec1 .layout_sec1 {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

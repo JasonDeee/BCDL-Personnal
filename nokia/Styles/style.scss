@@ -1,0 +1,168 @@
+@import "./FontFaces";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  transition: width 0.5s ease-out;
+  transform: translateX(5px);
+}
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #e9e7e756;
+}
+::-webkit-scrollbar-thumb {
+  background: #124095;
+}
+
+::selection {
+  background: #e9e7e7;
+  color: #124095;
+}
+
+html,
+body {
+  width: 100vw;
+}
+section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+div {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+p {
+  font-size: 1.24vw;
+}
+.mobile_Warn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 15vw;
+  color: #124095;
+  .pc_logo {
+    background-image: url(../Vector/PC.svg);
+    background-size: contain;
+
+    width: 70px;
+    height: 70px;
+  }
+}
+.desktop_layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .layout_sec1 {
+    height: fit-content;
+    width: 100vw;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    video {
+      width: 100%;
+      height: fit-content;
+      object-fit: cover;
+      pointer-events: none;
+      display: block;
+    }
+    .contents_layout {
+      width: 100%;
+      height: 100%;
+      background: #00000056;
+      position: absolute;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      color: #e9e7e7;
+      pointer-events: none;
+
+      h1 {
+        font-family: "nokia";
+        font-weight: normal;
+        font-size: 5.96vw;
+        transition: all 0.85s cubic-bezier(0.25, 0, 0, 2);
+      }
+
+      h2 {
+        font-size: 1.93vw;
+        font-weight: 200;
+        margin-bottom: 10vh;
+      }
+      .float {
+        max-width: 50vw;
+        position: absolute;
+        bottom: 120px;
+        text-align: center;
+        span {
+          color: #3895ff;
+        }
+      }
+    }
+  }
+}
+
+#sec2 {
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 38vw;
+  .sec1 .layout_sec1 {
+    left: 0;
+  }
+  #sec2 {
+    background: #124095;
+  }
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+
+  .sec1 .layout_sec1 {
+    right: 0;
+  }
+}
