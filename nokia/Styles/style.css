@@ -54,11 +54,6 @@ a:hover {
   opacity: 0.4;
 }
 
-html,
-body {
-  width: 100vw;
-}
-
 section {
   position: relative;
   display: -webkit-box;
