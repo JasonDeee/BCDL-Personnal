@@ -27,7 +27,13 @@
   background: #e9e7e7;
   color: #124095;
 }
-
+a {
+  color: inherit;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  opacity: 0.4;
+}
 html,
 body {
   width: 100vw;
@@ -41,7 +47,8 @@ div {
   background-repeat: no-repeat;
   background-position: center;
 }
-p {
+p,
+li {
   font-size: 1.24vw;
 }
 .mobile_Warn {
@@ -136,8 +143,179 @@ p {
   }
 }
 
+#sec2,
+#sec3,
+#sec4,
+#sec5,
+#sec6 {
+  h1 {
+    font-size: 5.96vw;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 1.56vw;
+    font-weight: 300;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
+
 #sec2 {
   width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7vw;
+  justify-content: center;
+  position: relative;
+
+  .hum3d {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#sec3 {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7vw;
+  justify-content: center;
+  position: relative;
+  li {
+    list-style: none;
+  }
+  ul {
+    margin-bottom: 100px;
+  }
+  overflow: hidden;
+
+  .theTwo {
+    width: 100%;
+    min-height: 15vw;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    justify-content: center;
+    margin-top: 20px;
+    gap: 3vw;
+    color: #e9e7e7;
+
+    background-image: url(../Vector/TheTwo.svg);
+    background-size: contain;
+    background-position: bottom;
+
+    .TwoOne,
+    .TwoTwo {
+      background: linear-gradient(
+        60deg,
+        #8f94fb,
+        #4e54c8
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 1vw;
+      color: #e9e7e7;
+      text-align: center;
+      width: 12vw;
+    }
+    .TwoOne {
+      height: 18.4vh;
+    }
+    .TwoTwo {
+      height: 22.2vh;
+    }
+  }
+}
+
+#sec4 {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7vw;
+  justify-content: center;
+  position: relative;
+
+  .TheFall {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 62%;
+    background-image: url(../Vector/TheFall.svg);
+    filter: drop-shadow(0.5vw 0.5vw 1.5vw #000000);
+
+    #reveal,
+    iframe {
+      width: inherit;
+      height: inherit;
+    }
+  }
+  .content_sec4 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    color: #e9e7e7;
+    pointer-events: none;
+
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+#sec5 {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7vw;
+  justify-content: center;
+  position: relative;
+
+  .TheThird {
+    position: absolute;
+    width: 15vw;
+    height: 80vh;
+    top: -10vh;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 0.75vw;
+
+    background-image: url(../Vector/TheThird.svg);
+    background-position: left;
+    background-size: contain;
+  }
+}
+#sec6 {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 7vw;
+  justify-content: center;
+  position: relative;
+
+  color: #292929;
+
+  .theEnding {
+    font-size: 0.9vw;
+    font-weight: 600;
+  }
 }
 
 .left {
@@ -147,11 +325,39 @@ p {
   display: flex;
   flex-direction: column-reverse;
   width: 38vw;
+
   .sec1 .layout_sec1 {
     left: 0;
   }
   #sec2 {
-    background: #124095;
+    background: linear-gradient(
+      60deg,
+      #8f94fb,
+      #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+  }
+  #sec3 {
+    color: #292929;
+    .theTwo {
+      left: 0;
+    }
+  }
+  #sec4 {
+    background: linear-gradient(
+      60deg,
+      #bd3f32,
+      #cb356b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #sec5 {
+    background: linear-gradient(
+      120deg,
+      #bd3f32,
+      #cb356b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: translateY(1px);
+    color: #e9e7e7;
   }
 }
 .right {
@@ -164,5 +370,28 @@ p {
 
   .sec1 .layout_sec1 {
     right: 0;
+  }
+
+  #sec2 {
+    color: #292929;
+  }
+  #sec3 {
+    background: #e9e7e7;
+    color: #292929;
+    .theTwo {
+      right: 0;
+    }
+  }
+  #sec4 {
+    align-items: flex-start;
+    color: #292929;
+    h3 {
+      margin-bottom: 50px;
+    }
+  }
+  #sec5 {
+    li {
+      list-style: none;
+    }
   }
 }

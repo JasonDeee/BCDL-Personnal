@@ -44,6 +44,16 @@
   color: #124095;
 }
 
+a {
+  color: inherit;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
 html,
 body {
   width: 100vw;
@@ -62,7 +72,8 @@ div {
   background-position: center;
 }
 
-p {
+p,
+li {
   font-size: 1.24vw;
 }
 
@@ -210,8 +221,246 @@ p {
   color: #3895ff;
 }
 
+#sec2 h1,
+#sec3 h1,
+#sec4 h1,
+#sec5 h1,
+#sec6 h1 {
+  font-size: 5.96vw;
+  font-weight: 900;
+}
+
+#sec2 h3,
+#sec3 h3,
+#sec4 h3,
+#sec5 h3,
+#sec6 h3 {
+  font-size: 1.56vw;
+  font-weight: 300;
+}
+
+#sec2 li,
+#sec3 li,
+#sec4 li,
+#sec5 li,
+#sec6 li {
+  margin-bottom: 10px;
+}
+
 #sec2 {
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#sec2 .hum3d {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#sec2 .hum3d iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#sec3 {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#sec3 li {
+  list-style: none;
+}
+
+#sec3 ul {
+  margin-bottom: 100px;
+}
+
+#sec3 .theTwo {
+  width: 100%;
+  min-height: 15vw;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  gap: 3vw;
+  color: #e9e7e7;
+  background-image: url(../Vector/TheTwo.svg);
+  background-size: contain;
+  background-position: bottom;
+}
+
+#sec3 .theTwo .TwoOne,
+#sec3 .theTwo .TwoTwo {
+  background: linear-gradient(60deg, #8f94fb, #4e54c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1vw;
+  color: #e9e7e7;
+  text-align: center;
+  width: 12vw;
+}
+
+#sec3 .theTwo .TwoOne {
+  height: 18.4vh;
+}
+
+#sec3 .theTwo .TwoTwo {
+  height: 22.2vh;
+}
+
+#sec4 {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#sec4 .TheFall {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 62%;
+  background-image: url(../Vector/TheFall.svg);
+  -webkit-filter: drop-shadow(0.5vw 0.5vw 1.5vw #000000);
+          filter: drop-shadow(0.5vw 0.5vw 1.5vw #000000);
+}
+
+#sec4 .TheFall #reveal,
+#sec4 .TheFall iframe {
+  width: inherit;
+  height: inherit;
+}
+
+#sec4 .content_sec4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  color: #e9e7e7;
+  pointer-events: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#sec5 {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#sec5 .TheThird {
+  position: absolute;
+  width: 15vw;
+  height: 80vh;
+  top: -10vh;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 0.75vw;
+  background-image: url(../Vector/TheThird.svg);
+  background-position: left;
+  background-size: contain;
+}
+
+#sec6 {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: #292929;
+}
+
+#sec6 .theEnding {
+  font-size: 0.9vw;
+  font-weight: 600;
 }
 
 .left {
@@ -233,7 +482,30 @@ p {
 }
 
 .left #sec2 {
-  background: #124095;
+  background: linear-gradient(60deg, #8f94fb, #4e54c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.left #sec3 {
+  color: #292929;
+}
+
+.left #sec3 .theTwo {
+  left: 0;
+}
+
+.left #sec4 {
+  background: linear-gradient(60deg, #bd3f32, #cb356b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.left #sec5 {
+  background: linear-gradient(120deg, #bd3f32, #cb356b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  color: #e9e7e7;
 }
 
 .right {
@@ -252,5 +524,33 @@ p {
 
 .right .sec1 .layout_sec1 {
   right: 0;
+}
+
+.right #sec2 {
+  color: #292929;
+}
+
+.right #sec3 {
+  background: #e9e7e7;
+  color: #292929;
+}
+
+.right #sec3 .theTwo {
+  right: 0;
+}
+
+.right #sec4 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #292929;
+}
+
+.right #sec4 h3 {
+  margin-bottom: 50px;
+}
+
+.right #sec5 li {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
